@@ -140,6 +140,19 @@ function longestWordLength2 (words) {
 console.log("longestWordLength2(['cat', 'a', 'abcde', 'ee'])")
 console.log(longestWordLength2(['cat', 'a', 'abcde', 'ee']))
 
+function longestWord (words) {
+  var longestWord = "";
+  for (var i=0; i<words.length; i++){
+    if (words[i].length > longestWord.length)
+    longestWord = words[i]
+    console.log("word: ", words[i]) // another way to concatenate strings
+  }
+  return longestWord
+}
+
+console.log(longestWord(['cat', 'a', 'abcde', 'ee']))
+
+
 // 9.
 function  stringsLongerThan (array, x) {
   // start with ['touch', 'me', 'in', 'the', 'morning'], 2
